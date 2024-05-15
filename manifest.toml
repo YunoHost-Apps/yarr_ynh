@@ -17,7 +17,7 @@ code = "https://github.com/nkanaev/yarr"
 
 [integration]
 yunohost = ">= 11.2"
-architectures = ["amd64", "arm64", "armhf"]
+architectures = "all"
 multi_instance = true
 
 ldap = false
