@@ -18,7 +18,7 @@ No se debe editar a mano.
 
 yarr (yet another rss reader) is a web-based feed aggregator which can be used both as a desktop application and a personal self-hosted server.
 
-**Versión actual:** 2.4~ynh1
+**Versión actual:** 2.4~ynh2
 
 ## Capturas
 
