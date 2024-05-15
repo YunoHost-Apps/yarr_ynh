@@ -5,11 +5,11 @@ packaging_format = 2
 id = "yarr"
 name = "Yarr"
 description.en = "Web-based feed aggregator"
-description.fr = "Expliquez en *quelques* (10~15) mots l'utilité de l'app ou ce qu'elle fait (l'objectif est de donner une idée grossière pour des utilisateurs qui naviguent dans un catalogue de 100+ apps)"
+description.fr = "Agrégateur de flux RSS"
 
 version = "2.4~ynh1"
 
-maintainers = []
+maintainers = ["eric_G"]
 
 [upstream]
 license = "MIT"
@@ -17,7 +17,7 @@ code = "https://github.com/nkanaev/yarr"
 
 [integration]
 yunohost = ">= 11.2"
-architectures = ["amd64"]
+architectures = ["amd64", "arm64", "armhf"]
 multi_instance = true
 
 ldap = false
@@ -31,6 +31,10 @@ ram.runtime = "50M"
 [install]
     [install.domain]
     type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/yarr"
 
     [install.init_main_permission]
     type = "group"

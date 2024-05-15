@@ -23,12 +23,12 @@ chown -R $app:www-data "$install_dir"
 #=================================================
 # BUILD APP
 #=================================================
-ynh_script_progression --message="Building app..." --weight=1
+ynh_script_progression --message="Building $app..." --weight=1
 
 ynh_exec_warn_less ynh_install_go --go_version=$go_version
-ynh_use_go
 
 pushd $install_dir/build/src/
+	ynh_use_go
  	ynh_exec_warn_less ynh_exec_as $app CGO_ENABLED=1 $ynh_go build -tags "sqlite_foreign_keys release" -ldflags='-s -w' -o $install_dir/yarr
 popd
 
