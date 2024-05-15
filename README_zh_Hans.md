@@ -18,7 +18,7 @@
 
 yarr (yet another rss reader) is a web-based feed aggregator which can be used both as a desktop application and a personal self-hosted server.
 
-**分发版本：** 2.4~ynh2
+**分发版本：** 2.4~ynh1
 
 ## 截图
 
