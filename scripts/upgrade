@@ -1,0 +1,65 @@
+#!/bin/bash
+
+
+#=================================================
+# IMPORT GENERIC HELPERS
+#=================================================
+
+source _common.sh
+source /usr/share/yunohost/helpers
+
+#=================================================
+# STOP SYSTEMD SERVICE
+#=================================================
+ynh_script_progression --message="Stopping $app's systemd service..." --weight=1
+
+ynh_systemd_action --service_name="$app" --action="stop" --log_path="/var/log/$app/$app.log"
+
+#=================================================
+# DOWNLOAD, CHECK AND UNPACK SOURCE
+#=================================================
+ynh_script_progression --message="Upgrading source files..." --weight=1
+
+# Download, check integrity, uncompress and patch the source from manifest.toml
+ynh_setup_source --dest_dir="$install_dir/build/" --full_replace=1
+
+chown -R "$app:www-data" "$install_dir"
+
+#=================================================
+# BUILD APP
+#=================================================
+ynh_script_progression --message="Building app..." --weight=1
+
+ynh_exec_warn_less ynh_install_go --go_version=$go_version
+ynh_use_go
+
+pushd $install_dir/src/
+ 	ynh_exec_warn_less ynh_exec_as $app CGO_ENABLED=1 $ynh_go build -tags "sqlite_foreign_keys release" -ldflags='-s -w' -o $install_dir/yarr
+popd
+
+ynh_remove_go
+ynh_secure_remove --file="$install_dir/build/"
+
+#=================================================
+# REAPPLY SYSTEM CONFIGURATIONS
+#=================================================
+ynh_script_progression --message="Upgrading system configurations related to $app..." --weight=1
+
+ynh_add_nginx_config
+
+ynh_add_systemd_config
+
+yunohost service add "$app" --description="Web-based feed aggregator" --log="/var/log/$app/$app.log"
+
+#=================================================
+# START SYSTEMD SERVICE
+#=================================================
+ynh_script_progression --message="Starting $app's systemd service..." --weight=1
+
+ynh_systemd_action --service_name="$app" --action="start" --log_path="/var/log/$app/$app.log"
+
+#=================================================
+# END OF SCRIPT
+#=================================================
+
+ynh_script_progression --message="Upgrade of $app completed" --last
