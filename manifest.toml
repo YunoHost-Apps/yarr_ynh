@@ -32,10 +32,6 @@ ram.runtime = "50M"
     [install.domain]
     type = "domain"
 
-    [install.path]
-    type = "path"
-    default = "/yarr"
-
     [install.init_main_permission]
     type = "group"
     default = "visitors"
