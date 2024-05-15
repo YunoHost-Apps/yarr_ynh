@@ -40,6 +40,9 @@ popd
 
 ynh_remove_go
 ynh_secure_remove --file="$install_dir/build/"
+ynh_secure_remove --file="$install_dir/.cache/"
+ynh_secure_remove --file="$install_dir/go/"
+ynh_secure_remove --file="$install_dir/.go-version"
 
 #=================================================
 # REAPPLY SYSTEM CONFIGURATIONS
