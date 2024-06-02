@@ -16,7 +16,7 @@ ynh_script_progression --message="Setting up source files..." --weight=1
 ynh_setup_source --dest_dir="$install_dir/build/"
 
 chmod -R o-rwx "$install_dir"
-chown -R $app:www-data "$install_dir"
+chown -R "$app:www-data" "$install_dir"
 
 #=================================================
 # SPECIFIC SETUP
@@ -27,9 +27,9 @@ ynh_script_progression --message="Building $app..." --weight=1
 
 ynh_exec_warn_less ynh_install_go --go_version=$go_version
 
-pushd $install_dir/build/src/
-	ynh_use_go
- 	ynh_exec_warn_less ynh_exec_as $app CGO_ENABLED=1 $ynh_go build -tags "sqlite_foreign_keys release" -ldflags='-s -w' -o $install_dir/yarr
+pushd "$install_dir/build/src/"
+    ynh_use_go
+    ynh_exec_warn_less ynh_exec_as "$app" CGO_ENABLED=1 $ynh_go build -tags "sqlite_foreign_keys release" -ldflags='-s -w' -o "$install_dir/yarr"
 popd
 
 ynh_remove_go
