@@ -7,7 +7,7 @@ name = "Yarr"
 description.en = "Web-based feed aggregator"
 description.fr = "Agrégateur de flux RSS"
 
-version = "2.4~ynh1"
+version = "2.4~ynh2"
 
 maintainers = ["eric_G"]
 
@@ -16,7 +16,7 @@ license = "MIT"
 code = "https://github.com/nkanaev/yarr"
 
 [integration]
-yunohost = ">= 11.2.12"
+yunohost = ">= 11.2.14"
 architectures = "all"
 multi_instance = true
 
