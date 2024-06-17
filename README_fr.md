@@ -18,7 +18,7 @@ Il NE doit PAS être modifié à la main.
 
 yarr (yet another rss reader) est un agrégateur de flux basé sur le Web qui peut être utilisé à la fois comme application de bureau et comme serveur personnel auto-hébergé.
 
-**Version incluse :** 2.4~ynh1
+**Version incluse :** 2.4~ynh2
 
 ## Captures d’écran
 
