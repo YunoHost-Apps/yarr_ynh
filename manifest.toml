@@ -16,7 +16,7 @@ license = "MIT"
 code = "https://github.com/nkanaev/yarr"
 
 [integration]
-yunohost = ">= 11.2.14.1"
+yunohost = ">= 11.2.15"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
