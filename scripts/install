@@ -10,56 +10,55 @@ source /usr/share/yunohost/helpers
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
-ynh_script_progression --message="Setting up source files..." --weight=1
+ynh_script_progression "Setting up source files..."
 
 # Download, check integrity, uncompress and patch the source from manifest.toml
 ynh_setup_source --dest_dir="$install_dir/build/"
 
-chmod -R o-rwx "$install_dir"
-chown -R "$app:www-data" "$install_dir"
-
+#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chmod -R o-rwx "$install_dir"
+#REMOVEME? Assuming the install dir is setup using ynh_setup_source, the proper chmod/chowns are now already applied and it shouldn't be necessary to tweak perms | chown -R "$app:www-data" "$install_dir"
 #=================================================
 # SPECIFIC SETUP
 #=================================================
 # BUILD APP
 #=================================================
-ynh_script_progression --message="Building $app..." --weight=1
+ynh_script_progression "Building $app..."
 
-ynh_exec_warn_less ynh_install_go --go_version=$go_version
+ynh_go_install
 
 pushd "$install_dir/build/src/"
-    ynh_use_go
-    ynh_exec_warn_less ynh_exec_as "$app" CGO_ENABLED=1 $ynh_go build -tags "sqlite_foreign_keys release" -ldflags='-s -w' -o "$install_dir/yarr"
+
+    ynh_hide_warnings ynh_exec_as_app CGO_ENABLED=1 go build -tags "sqlite_foreign_keys release" -ldflags='-s -w' -o "$install_dir/yarr"
 popd
 
-ynh_remove_go
-ynh_secure_remove --file="$install_dir/build/"
-ynh_secure_remove --file="$install_dir/.cache/"
-ynh_secure_remove --file="$install_dir/go/"
-ynh_secure_remove --file="$install_dir/.go-version"
+ynh_go_remove
+ynh_safe_rm "$install_dir/build/"
+ynh_safe_rm "$install_dir/.cache/"
+ynh_safe_rm "$install_dir/go/"
+ynh_safe_rm "$install_dir/.go-version"
 
 #=================================================
 # SYSTEM CONFIGURATION
 #=================================================
-ynh_script_progression --message="Adding system configurations related to $app..." --weight=1
+ynh_script_progression "Adding system configurations related to $app..."
 
 # Create a dedicated NGINX config using the conf/nginx.conf template
-ynh_add_nginx_config
+ynh_config_add_nginx
 
 # Create a dedicated systemd config
-ynh_add_systemd_config
+ynh_config_add_systemd
 
 yunohost service add "$app" --description="Web-based feed aggregator" --log="/var/log/$app/$app.log"
 
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
-ynh_script_progression --message="Starting $app's systemd service..." --weight=1
+ynh_script_progression "Starting $app's systemd service..."
 
 # Start a systemd service
-ynh_systemd_action --service_name="$app" --action="start" --log_path="/var/log/$app/$app.log"
+ynh_systemctl --service="$app" --action="start"
 
 #=================================================
 # END OF SCRIPT
 #=================================================
-ynh_script_progression --message="Installation of $app completed" --last
+ynh_script_progression "Installation of $app completed"
