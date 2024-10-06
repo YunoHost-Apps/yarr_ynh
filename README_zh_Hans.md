@@ -5,7 +5,7 @@
 
 # YunoHost 上的 Yarr
 
-[![集成程度](https://dash.yunohost.org/integration/yarr.svg)](https://dash.yunohost.org/appci/app/yarr) ![工作状态](https://ci-apps.yunohost.org/ci/badges/yarr.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/yarr.maintain.svg)
+[![集成程度](https://dash.yunohost.org/integration/yarr.svg)](https://ci-apps.yunohost.org/ci/apps/yarr/) ![工作状态](https://ci-apps.yunohost.org/ci/badges/yarr.status.svg) ![维护状态](https://ci-apps.yunohost.org/ci/badges/yarr.maintain.svg)
 
 [![使用 YunoHost 安装 Yarr](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=yarr)
 

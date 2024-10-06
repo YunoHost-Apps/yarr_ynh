@@ -5,7 +5,7 @@ EZ editatu eskuz.
 
 # Yarr YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/yarr.svg)](https://dash.yunohost.org/appci/app/yarr) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/yarr.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/yarr.maintain.svg)
+[![Integrazio maila](https://dash.yunohost.org/integration/yarr.svg)](https://ci-apps.yunohost.org/ci/apps/yarr/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/yarr.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/yarr.maintain.svg)
 
 [![Instalatu Yarr YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=yarr)
 
