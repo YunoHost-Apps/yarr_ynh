@@ -5,7 +5,7 @@ No se debe editar a mano.
 
 # Yarr para Yunohost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/yarr.svg)](https://dash.yunohost.org/appci/app/yarr) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/yarr.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/yarr.maintain.svg)
+[![Nivel de integración](https://dash.yunohost.org/integration/yarr.svg)](https://ci-apps.yunohost.org/ci/apps/yarr/) ![Estado funcional](https://ci-apps.yunohost.org/ci/badges/yarr.status.svg) ![Estado En Mantención](https://ci-apps.yunohost.org/ci/badges/yarr.maintain.svg)
 
 [![Instalar Yarr con Yunhost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=yarr)
 
@@ -32,7 +32,7 @@ yarr (yet another rss reader) is a web-based feed aggregator which can be used b
 
 ## Información para desarrolladores
 
-Por favor enviar sus correcciones a la [`branch testing`](https://github.com/YunoHost-Apps/yarr_ynh/tree/testing
+Por favor enviar sus correcciones a la [rama `testing`](https://github.com/YunoHost-Apps/yarr_ynh/tree/testing).
 
 Para probar la rama `testing`, sigue asÍ:
 

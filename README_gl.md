@@ -5,7 +5,7 @@ NON debe editarse manualmente.
 
 # Yarr para YunoHost
 
-[![Nivel de integración](https://dash.yunohost.org/integration/yarr.svg)](https://dash.yunohost.org/appci/app/yarr) ![Estado de funcionamento](https://ci-apps.yunohost.org/ci/badges/yarr.status.svg) ![Estado de mantemento](https://ci-apps.yunohost.org/ci/badges/yarr.maintain.svg)
+[![Nivel de integración](https://dash.yunohost.org/integration/yarr.svg)](https://ci-apps.yunohost.org/ci/apps/yarr/) ![Estado de funcionamento](https://ci-apps.yunohost.org/ci/badges/yarr.status.svg) ![Estado de mantemento](https://ci-apps.yunohost.org/ci/badges/yarr.maintain.svg)
 
 [![Instalar Yarr con YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=yarr)
 
