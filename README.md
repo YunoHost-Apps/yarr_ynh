@@ -5,7 +5,9 @@ It shall NOT be edited by hand.
 
 # Yarr for YunoHost
 
-[![Integration level](https://dash.yunohost.org/integration/yarr.svg)](https://ci-apps.yunohost.org/ci/apps/yarr/) ![Working status](https://ci-apps.yunohost.org/ci/badges/yarr.status.svg) ![Maintenance status](https://ci-apps.yunohost.org/ci/badges/yarr.maintain.svg)
+[![Integration level](https://apps.yunohost.org/badge/integration/yarr)](https://ci-apps.yunohost.org/ci/apps/yarr/)
+![Working status](https://apps.yunohost.org/badge/state/yarr)
+![Maintenance status](https://apps.yunohost.org/badge/maintained/yarr)
 
 [![Install Yarr with YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=yarr)
 
@@ -18,7 +20,7 @@ It shall NOT be edited by hand.
 
 yarr (yet another rss reader) is a web-based feed aggregator which can be used both as a desktop application and a personal self-hosted server.
 
-**Shipped version:** 2.4~ynh2
+**Shipped version:** 2.4~ynh3
 
 ## Screenshots
 

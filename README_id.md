@@ -5,7 +5,9 @@ Ini TIDAK boleh diedit dengan tangan.
 
 # Yarr untuk YunoHost
 
-[![Tingkat integrasi](https://dash.yunohost.org/integration/yarr.svg)](https://ci-apps.yunohost.org/ci/apps/yarr/) ![Status kerja](https://ci-apps.yunohost.org/ci/badges/yarr.status.svg) ![Status pemeliharaan](https://ci-apps.yunohost.org/ci/badges/yarr.maintain.svg)
+[![Tingkat integrasi](https://apps.yunohost.org/badge/integration/yarr)](https://ci-apps.yunohost.org/ci/apps/yarr/)
+![Status kerja](https://apps.yunohost.org/badge/state/yarr)
+![Status pemeliharaan](https://apps.yunohost.org/badge/maintained/yarr)
 
 [![Pasang Yarr dengan YunoHost](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=yarr)
 
@@ -18,7 +20,7 @@ Ini TIDAK boleh diedit dengan tangan.
 
 yarr (yet another rss reader) is a web-based feed aggregator which can be used both as a desktop application and a personal self-hosted server.
 
-**Versi terkirim:** 2.4~ynh2
+**Versi terkirim:** 2.4~ynh3
 
 ## Tangkapan Layar
 

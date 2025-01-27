@@ -5,7 +5,9 @@ EZ editatu eskuz.
 
 # Yarr YunoHost-erako
 
-[![Integrazio maila](https://dash.yunohost.org/integration/yarr.svg)](https://ci-apps.yunohost.org/ci/apps/yarr/) ![Funtzionamendu egoera](https://ci-apps.yunohost.org/ci/badges/yarr.status.svg) ![Mantentze egoera](https://ci-apps.yunohost.org/ci/badges/yarr.maintain.svg)
+[![Integrazio maila](https://apps.yunohost.org/badge/integration/yarr)](https://ci-apps.yunohost.org/ci/apps/yarr/)
+![Funtzionamendu egoera](https://apps.yunohost.org/badge/state/yarr)
+![Mantentze egoera](https://apps.yunohost.org/badge/maintained/yarr)
 
 [![Instalatu Yarr YunoHost-ekin](https://install-app.yunohost.org/install-with-yunohost.svg)](https://install-app.yunohost.org/?app=yarr)
 
@@ -18,7 +20,7 @@ EZ editatu eskuz.
 
 yarr (yet another rss reader) is a web-based feed aggregator which can be used both as a desktop application and a personal self-hosted server.
 
-**Paketatutako bertsioa:** 2.4~ynh2
+**Paketatutako bertsioa:** 2.4~ynh3
 
 ## Pantaila-argazkiak
 
