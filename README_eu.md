@@ -20,7 +20,7 @@ EZ editatu eskuz.
 
 yarr (yet another rss reader) is a web-based feed aggregator which can be used both as a desktop application and a personal self-hosted server.
 
-**Paketatutako bertsioa:** 2.4~ynh3
+**Paketatutako bertsioa:** 2.5~ynh1
 
 ## Pantaila-argazkiak
 
@@ -36,7 +36,7 @@ yarr (yet another rss reader) is a web-based feed aggregator which can be used b
 
 Bidali `pull request`a [`testing` abarrera](https://github.com/YunoHost-Apps/yarr_ynh/tree/testing).
 
-`testing` abarra probatzeko, ondorengoa egin:
+`testing` abarra probatzeko, honakoa egin:
 
 ```bash
 sudo yunohost app install https://github.com/YunoHost-Apps/yarr_ynh/tree/testing --debug

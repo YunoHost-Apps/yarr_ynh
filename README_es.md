@@ -3,7 +3,7 @@ Este archivo README esta generado automaticamente<https://github.com/YunoHost/ap
 No se debe editar a mano.
 -->
 
-# Yarr para Yunohost
+# Yarr para YunoHost
 
 [![Nivel de integración](https://apps.yunohost.org/badge/integration/yarr)](https://ci-apps.yunohost.org/ci/apps/yarr/)
 ![Estado funcional](https://apps.yunohost.org/badge/state/yarr)
@@ -20,7 +20,7 @@ No se debe editar a mano.
 
 yarr (yet another rss reader) is a web-based feed aggregator which can be used both as a desktop application and a personal self-hosted server.
 
-**Versión actual:** 2.4~ynh3
+**Versión actual:** 2.5~ynh1
 
 ## Capturas
 
