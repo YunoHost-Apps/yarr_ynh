@@ -7,7 +7,7 @@ name = "Yarr"
 description.en = "Web-based feed aggregator"
 description.fr = "Agrégateur de flux RSS"
 
-version = "2.4~ynh3"
+version = "2.5~ynh1"
 
 maintainers = []
 
@@ -41,8 +41,8 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/nkanaev/yarr/archive/refs/tags/v2.4.tar.gz"
-    sha256 = "2d55a13348c8558aaa3126885bff9bf02f45ea1dc19b2aca86ba121dade7d16e"
+    url = "https://github.com/nkanaev/yarr/archive/refs/tags/v2.5.tar.gz"
+    sha256 = "0ea4b037b4485abe599ad2fe743f29adf9656dc34a8ffd0deefe3e0c863a37af"
     autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
