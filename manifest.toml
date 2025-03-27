@@ -9,7 +9,7 @@ description.fr = "Agrégateur de flux RSS"
 
 version = "2.5~ynh1"
 
-maintainers = []
+maintainers = ["eric_G"]
 
 [upstream]
 license = "MIT"
