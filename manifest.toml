@@ -41,8 +41,13 @@ ram.runtime = "50M"
     [resources.sources]
 
     [resources.sources.main]
-    url = "https://github.com/nkanaev/yarr/archive/refs/tags/v2.5.tar.gz"
-    sha256 = "0ea4b037b4485abe599ad2fe743f29adf9656dc34a8ffd0deefe3e0c863a37af"
+    in_subdir = false
+    amd64.url = "https://github.com/nkanaev/yarr/releases/download/v2.5/yarr_linux_amd64.zip"
+    amd64.sha256 = "19bde8ce82070f924b1f49101890b6e2c47d0d0d70a7153117e3180749b35ce6"
+    arm64.url = "https://github.com/nkanaev/yarr/releases/download/v2.5/yarr_linux_arm64.zip"
+    arm64.sha256 = "bca8b66ece38ce7023af0f425aa1c6a94db5082b8007519de1596c54edd82b70"
+    armhf.url = "https://github.com/nkanaev/yarr/releases/download/v2.5/yarr_linux_armv7.zip"
+    armhf.sha256 = "5dc5c823c19714648d9f669212dc6f5cff9faf980db6e5e0552826155270596d"
     autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]

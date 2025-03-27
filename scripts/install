@@ -8,24 +8,9 @@ source /usr/share/yunohost/helpers
 #=================================================
 ynh_script_progression "Setting up source files..."
 
-ynh_setup_source --dest_dir="$install_dir/build/"
+ynh_setup_source --dest_dir="$install_dir"
 
-#=================================================
-# BUILD APP
-#=================================================
-ynh_script_progression "Building $app..."
-
-ynh_go_install
-
-pushd "$install_dir/build/"
-    ynh_hide_warnings ynh_exec_as_app CGO_ENABLED=1 go build -tags "sqlite_foreign_keys release" -ldflags='-s -w' -o "$install_dir/yarr"
-popd
-
-ynh_go_remove
-ynh_safe_rm "$install_dir/build/"
-ynh_safe_rm "$install_dir/.cache/"
-ynh_safe_rm "$install_dir/go/"
-ynh_safe_rm "$install_dir/.go-version"
+chmod +x $install_dir/yarr
 
 #=================================================
 # SYSTEM CONFIGURATION
