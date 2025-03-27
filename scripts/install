@@ -17,7 +17,7 @@ ynh_script_progression "Building $app..."
 
 ynh_go_install
 
-pushd "$install_dir/build/src/"
+pushd "$install_dir/build/"
     ynh_hide_warnings ynh_exec_as_app CGO_ENABLED=1 go build -tags "sqlite_foreign_keys release" -ldflags='-s -w' -o "$install_dir/yarr"
 popd
 
