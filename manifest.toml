@@ -18,7 +18,7 @@ code = "https://github.com/nkanaev/yarr"
 [integration]
 yunohost = ">= 12.0.9"
 helpers_version = "2.1"
-architectures = "all"
+architectures = ["amd64", "arm64", "armhf"]
 multi_instance = true
 
 ldap = false
@@ -48,6 +48,7 @@ ram.runtime = "50M"
     arm64.sha256 = "bca8b66ece38ce7023af0f425aa1c6a94db5082b8007519de1596c54edd82b70"
     armhf.url = "https://github.com/nkanaev/yarr/releases/download/v2.5/yarr_linux_armv7.zip"
     armhf.sha256 = "5dc5c823c19714648d9f669212dc6f5cff9faf980db6e5e0552826155270596d"
+
     autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
