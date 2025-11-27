@@ -49,8 +49,6 @@ ram.runtime = "50M"
     armhf.url = "https://github.com/nkanaev/yarr/releases/download/v2.5/yarr_linux_armv7.zip"
     armhf.sha256 = "5dc5c823c19714648d9f669212dc6f5cff9faf980db6e5e0552826155270596d"
 
-    autoupdate.strategy = "latest_github_tag"
-
     [resources.system_user]
 
     [resources.install_dir]
