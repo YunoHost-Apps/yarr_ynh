@@ -7,7 +7,7 @@ name = "Yarr"
 description.en = "Web-based feed aggregator"
 description.fr = "Agrégateur de flux RSS"
 
-version = "2.5~ynh1"
+version = "2.6~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -16,7 +16,7 @@ license = "MIT"
 code = "https://github.com/nkanaev/yarr"
 
 [integration]
-yunohost = ">= 12.1.17"
+yunohost = ">= 12.1.39"
 helpers_version = "2.1"
 architectures = ["amd64", "arm64", "armhf"]
 multi_instance = true
@@ -42,14 +42,12 @@ ram.runtime = "50M"
 
     [resources.sources.main]
     in_subdir = false
-    amd64.url = "https://github.com/nkanaev/yarr/releases/download/v2.5/yarr_linux_amd64.zip"
-    amd64.sha256 = "19bde8ce82070f924b1f49101890b6e2c47d0d0d70a7153117e3180749b35ce6"
-    arm64.url = "https://github.com/nkanaev/yarr/releases/download/v2.5/yarr_linux_arm64.zip"
-    arm64.sha256 = "bca8b66ece38ce7023af0f425aa1c6a94db5082b8007519de1596c54edd82b70"
-    armhf.url = "https://github.com/nkanaev/yarr/releases/download/v2.5/yarr_linux_armv7.zip"
-    armhf.sha256 = "5dc5c823c19714648d9f669212dc6f5cff9faf980db6e5e0552826155270596d"
-
-    autoupdate.strategy = "latest_github_tag"
+    amd64.url = "https://github.com/nkanaev/yarr/releases/download/v2.6/yarr_linux_amd64.zip"
+    amd64.sha256 = "842d124099c68d47804e623c40129dc9b4d2b46514a13d91a393a02c49e01f95"
+    arm64.url = "https://github.com/nkanaev/yarr/releases/download/v2.6/yarr_linux_arm64.zip"
+    arm64.sha256 = "b2a71ee47e65153c6d611f6d36137daf786852e6715c008387889551677b4043"
+    armhf.url = "https://github.com/nkanaev/yarr/releases/download/v2.6/yarr_linux_armv7.zip"
+    armhf.sha256 = "2841c305a02400b59d77c72879f405527b11e7b565c755acbfab007c3fa97815"
 
     [resources.system_user]
 

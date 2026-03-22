@@ -10,7 +10,7 @@ It shall NOT be edited by hand.
 
 Web-based feed aggregator
 
-[![Version: 2.5~ynh1](https://img.shields.io/badge/Version-2.5~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/yarr/)
+[![Version: 2.6~ynh1](https://img.shields.io/badge/Version-2.6~ynh1-rgb(18,138,11)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/yarr/)
 
 <div align="center">
 <a href="https://apps.yunohost.org/app/yarr"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
